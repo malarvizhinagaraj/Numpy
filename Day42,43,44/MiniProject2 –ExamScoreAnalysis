@@ -1,0 +1,45 @@
+import numpy as np
+
+# 1. Data Representation:  
+
+np.random.seed(1)  # So we get same results every time
+scores = np.random.randint(40, 101, size=(10, 5))  # 10 students, 5 subjects
+print("🎓 Exam Scores (out of 100):\n", scores)
+
+#  2. Element-wiseOperations:
+total_scores = np.sum(scores, axis=1)
+print("\n📊 Total Scores (out of 500):\n", total_scores)
+
+
+percentages = total_scores / 500 * 100
+print("\n📈 Percentages:\n", np.round(percentages, 2))
+
+#3. Broadcasting:
+bonus_scores = scores + 5
+print("\n🎁 Scores After Bonus (+5):\n", bonus_scores)
+#4. UniversalFunctions(ufunc):
+performance_boost = np.power(percentages, 1.1)
+print("\n⚡ Boosted Performance (percentage^1.1):\n", np.round(performance_boost, 2))
+
+
+avg_scores = np.mean(scores, axis=1)
+log_growth = np.log(avg_scores)
+print("\n📚 Log Growth of Average Score:\n", np.round(log_growth, 2))
+
+#5. AggregationFunctions:
+subject_means = np.mean(scores, axis=0)
+subject_medians = np.median(scores, axis=0)
+print("\n📘 Subject-wise Mean Scores:\n", np.round(subject_means, 2))
+print("📗 Subject-wise Median Scores:\n", subject_medians)
+
+best_score = np.max(total_scores)
+worst_index = np.argmin(total_scores)
+print("\n🏆 Best Total Score:", best_score)
+print("😓 Worst Performing Student (index):", worst_index)
+
+
+
+score_variance = np.var(scores, axis=1)
+score_stddev = np.std(scores, axis=1)
+print("\n📐 Score Variance (per student):\n", np.round(score_variance, 2))
+print("📏 Score Std Dev (per student):\n", np.round(score_stddev, 2))
