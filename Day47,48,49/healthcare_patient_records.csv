@@ -1,0 +1,11 @@
+Patient_ID,Age,Blood_Pressure,Disease,City,Cholesterol,Family_History
+101,45,130,Diabetes,Los Angeles,210,Yes
+102,62,125,Heart Disease,New York,190,No
+103,37,118,Flu,Chicago,180,No
+104,70,145,Heart Disease,Houston,230,Yes
+105,58,132,Diabetes,San Francisco,215,Yes
+106,49,110,Asthma,Los Angeles,170,No
+107,65,138,Heart Disease,Houston,220,Yes
+108,55,120,Diabetes,Miami,200,No
+109,60,129,Hypertension,Houston,210,Yes
+110,75,135,Heart Disease,Los Angeles,240,Yes
