@@ -1,0 +1,7 @@
+{"Name":"Alice","Email":"alice@example.com","Feedback":"Great service!","Rating":5,"feedback2":null}
+{"Name":"Bob","Email":"bob@example.com","Feedback":"Okay","Rating":3,"feedback2":null}
+{"Name":"Anonymous","Email":"charlie@example.com","Feedback":"Loved it!","Rating":4,"feedback2":"Charlie"}
+{"Name":"Anonymous","Email":"david@example.com","Feedback":"Service was slow","Rating":2,"feedback2":"David"}
+{"Name":"Anonymous","Email":"emma@example.com","Feedback":"Fantastic experience","Rating":5,"feedback2":"Emma"}
+{"Name":"Eve","Email":"eve@example.com","Feedback":"Not good","Rating":2,"feedback2":null}
+{"Name":"Frank","Email":"frank@example.com","Feedback":"Very bad","Rating":1,"feedback2":null}
