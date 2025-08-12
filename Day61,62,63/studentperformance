@@ -1,0 +1,51 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+np.random.seed(42)
+terms = ["Term 1", "Term 2", "Term 3", "Term 4"]  # Academic terms
+subjects = ["Math", "Science", "English", "History", "Art"]
+students = [f"Student_{i}" for i in range(1, 51)]  # 50 students
+
+
+data = []
+for student in students:
+    for term in terms:
+        attendance = np.random.randint(70, 101)  # attendance percentage
+        for subject in subjects:
+            score = np.random.randint(40, 101)  # score out of 100
+            data.append([student, term, subject, score, attendance])
+
+df = pd.DataFrame(data, columns=["Student", "Term", "Subject", "Score", "Attendance"])
+
+avg_scores = df.groupby("Term")["Score"].mean().reset_index()
+
+plt.figure(figsize=(8,5))
+sns.lineplot(data=avg_scores, x="Term", y="Score", marker="o", color="blue")
+plt.title("Average Student Scores Over Time", fontsize=14)
+plt.ylabel("Average Score")
+plt.ylim(0, 100)
+plt.tight_layout()
+plt.show()
+
+
+avg_attendance_perf = df.groupby("Student")[["Attendance", "Score"]].mean().reset_index()
+
+plt.figure(figsize=(8,5))
+sns.scatterplot(data=avg_attendance_perf, x="Attendance", y="Score", color="green", alpha=0.7)
+plt.title("Attendance vs Performance", fontsize=14)
+plt.xlabel("Average Attendance (%)")
+plt.ylabel("Average Score")
+plt.ylim(0, 100)
+plt.tight_layout()
+plt.show()
+
+subject_perf = df.groupby("Subject")["Score"].mean().reset_index().sort_values(by="Score", ascending=False)
+
+plt.figure(figsize=(8,5))
+sns.barplot(data=subject_perf, x="Subject", y="Score", palette="mako")
+plt.title("Average Scores by Subject", fontsize=14)
+plt.ylim(0, 100)
+plt.tight_layout()
+plt.show()
