@@ -1,0 +1,11 @@
+Product_ID,Product_Category,Customer_Location,Price,Discount_Applied,Purchase_Frequency,Review_Rating,Sales
+P001,Electronics,New York,500,0.10,5,4.2,2250
+P002,Fashion,California,80,0.20,3,3.8,192
+P003,Home,Texas,150,0.15,2,4.5,255
+P004,Electronics,Florida,1200,0.05,1,4.7,1140
+P005,Fashion,New York,60,0.30,4,4.0,168
+P006,Home,Illinois,200,0.25,2,3.6,300
+P007,Electronics,Texas,700,0.10,3,4.3,1890
+P008,Fashion,California,100,0.40,5,4.1,300
+P009,Home,Florida,250,0.20,1,4.6,200
+P010,Electronics,Illinois,900,0.15,2,3.9,1530

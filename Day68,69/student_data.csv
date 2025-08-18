@@ -1,0 +1,11 @@
+Student_ID,Study_Hours,Attendance,Previous_Grade,Parental_Education,Extracurricular_Activities,Final_Grade
+101,5,80,Bachelor,High,Yes,75
+102,8,90,Master,Medium,No,85
+103,2,60,High School,Low,Yes,55
+104,6,85,Bachelor,Medium,No,78
+105,9,95,Master,High,Yes,92
+106,4,70,High School,Low,No,60
+107,7,88,Bachelor,Medium,Yes,80
+108,3,65,High School,Low,No,58
+109,10,98,Master,High,Yes,95
+110,5,75,Bachelor,Medium,No,70

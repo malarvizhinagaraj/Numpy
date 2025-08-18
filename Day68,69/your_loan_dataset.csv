@@ -1,0 +1,11 @@
+customer_id,income,employment_type,loan_amount,credit_history,marital_status,age,dependents,default
+C001,45000,Salaried,15000,Good,Married,35,2,No
+C002,60000,Self_Employed,25000,Bad,Single,42,0,Yes
+C003,32000,Unemployed,8000,Good,Married,29,1,No
+C004,72000,Salaried,20000,Good,Single,40,0,No
+C005,28000,Self_Employed,10000,Bad,Married,36,3,Yes
+C006,50000,Salaried,18000,Good,Married,33,2,No
+C007,31000,Unemployed,7000,Bad,Single,27,0,Yes
+C008,85000,Salaried,30000,Good,Married,45,1,No
+C009,40000,Self_Employed,12000,Bad,Single,31,0,Yes
+C010,52000,Salaried,16000,Good,Married,38,2,No

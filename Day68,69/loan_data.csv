@@ -1,0 +1,11 @@
+Customer_ID,Income,Loan_Amount,Credit_Score,Employment_Status,Debt_to_Income,Loan_Default
+201,50000,20000,700,Employed,0.3,No
+202,60000,25000,680,Self-Employed,0.35,No
+203,40000,15000,650,Unemployed,0.5,Yes
+204,80000,30000,720,Employed,0.25,No
+205,35000,10000,600,Unemployed,0.55,Yes
+206,75000,28000,710,Employed,0.28,No
+207,50000,20000,690,Self-Employed,0.33,No
+208,30000,12000,620,Unemployed,0.6,Yes
+209,90000,35000,730,Employed,0.2,No
+210,45000,18000,660,Self-Employed,0.4,No
